@@ -202,12 +202,13 @@ function Info(fname,lname,email,password)
 button.addEventListener("click",function(e){
    e.preventDefault();
   
+  
+
+   let  myInfo=new Info(fname.value,lname.value,email.value,password.value);
    fname.value="";
    lname.value="";
    email.value="";
    password.value="";
-
-   let  myInfo=new Info(fname.value,lname.value,email.value,password.value);
    for(let id in myInfo){
 
      
